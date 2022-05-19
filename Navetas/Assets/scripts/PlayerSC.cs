@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 public class PlayerSC : MonoBehaviour
@@ -84,6 +85,13 @@ public class PlayerSC : MonoBehaviour
         if (context.started && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower); ;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

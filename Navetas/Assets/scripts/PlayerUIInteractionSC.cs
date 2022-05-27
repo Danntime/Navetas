@@ -19,4 +19,5 @@ public class PlayerUIInteractionSC : MonoBehaviour
     private void Start()
     {
         textDisplay.enabled = false;
+    }
 }

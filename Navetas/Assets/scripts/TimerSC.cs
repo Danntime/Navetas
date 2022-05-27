@@ -1,24 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TimerSC : MonoBehaviour
 {
-    private float TimeRemaining = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  public TextMeshProUGUI textDisplay;
+  public float TimeRemaining = 50f;
+  private int TimeInteger;
 
-    // Update is called once per frame
+
+  void Update()
+  {
+    TimeInteger = (int)TimeRemaining;
+      textDisplay.text =  TimeInteger.ToString();
+  }
     void FixedUpdate()
     {
         if (TimeRemaining > 0)
         {
             TimeRemaining -= Time.fixedDeltaTime;
         }
-        else 
+        else
         {
             //timerTrigger
         }

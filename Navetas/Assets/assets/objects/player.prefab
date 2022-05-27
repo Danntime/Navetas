@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5024609007302754055}
   - component: {fileID: 5024609007302754054}
+  - component: {fileID: 394238024245983301}
   - component: {fileID: 5024609007302754053}
   - component: {fileID: 5024609007302754052}
   - component: {fileID: 5024609007302754059}
@@ -91,6 +92,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &394238024245983301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024609007302754058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ba15dff188ab74daad3a18be9dbf68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 0}
 --- !u!50 &5024609007302754053
 Rigidbody2D:
   serializedVersion: 4
@@ -248,6 +262,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8e6cdc6c-aada-47b0-8089-6c3e66b89b0d
     m_ActionName: Player/Interact[/Keyboard/f,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d0037e0e-ffdb-4b13-a21d-01300470bb13
+    m_ActionName: Player/ToggleTimer[/Keyboard/t]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

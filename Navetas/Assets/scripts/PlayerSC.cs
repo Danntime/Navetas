@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-
 enum FlipDirection
 {
     X,
@@ -21,7 +20,6 @@ public class PlayerSC : MonoBehaviour
     private bool isFacingRight = true;
 
     private bool isInverting = false;
-
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -118,7 +116,6 @@ public class PlayerSC : MonoBehaviour
     private IEnumerator StopInvertingGravity(int ms)
     {
         yield return new WaitForSeconds(ms / 1000);
-        Debug.Log("Next");
         isInverting = false;
     }
 

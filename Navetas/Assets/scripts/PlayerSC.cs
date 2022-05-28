@@ -119,4 +119,16 @@ public class PlayerSC : MonoBehaviour
         isInverting = false;
     }
 
+    public void OnRestartGame(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            RestartGame();
+        }
+    }
+    private void RestartGame()
+    {
+        SceneManager.LoadScene("niveau1");
+        GameObject.Find("Chrono").GetComponent<TimerSC>().timerCount = 0;
+    }
 }

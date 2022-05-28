@@ -1,30 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 
 public class TimerSC : MonoBehaviour
 {
-  public TextMeshProUGUI textDisplay;
-  public float TimeRemaining = 50f;
-  private int TimeInteger;
-
-
-  void Update()
-  {
-    TimeInteger = (int)TimeRemaining;
-      textDisplay.text =  TimeInteger.ToString();
-  }
-    void FixedUpdate()
+    public float timerCount = 0;
+    private int timerCountInteger;
+    private TextMeshProUGUI timer;
+    private void Start()
     {
-        if (TimeRemaining > 0)
-        {
-            TimeRemaining -= Time.fixedDeltaTime;
-        }
-        else
-        {
-            //timerTrigger
-        }
+        timer = GetComponent<TextMeshProUGUI>();
     }
+    private void Update()
+    {
+        timerCountInteger = (int)timerCount;
+        timerCount += Time.deltaTime;
+        timer.text = timerCountInteger.ToString();
+    }
+
 }

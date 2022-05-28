@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class FlagSC : MonoBehaviour
 {
     public string niveauSuivant;
+    public GameObject timer;
     // Passer au niveau suivant
     private void OnTriggerEnter2D(Collider2D collision)
     {

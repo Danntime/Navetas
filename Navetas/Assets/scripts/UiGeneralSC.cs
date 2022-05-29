@@ -11,8 +11,13 @@ public class UiGeneralSC : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         if (instance == null)
+        {
             instance = gameObject;
+            GetComponentInChildren<TextMeshProUGUI>().enabled = false;
+        }
         else
+        {
             Destroy(gameObject);
+        }
     }
 }

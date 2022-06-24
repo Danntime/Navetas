@@ -1490,6 +1490,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1587213844, guid: 3d11f66a69f8438479d4c53596024fb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587213846, guid: 3d11f66a69f8438479d4c53596024fb0, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 6.11
+      objectReference: {fileID: 0}
     - target: {fileID: 4942813304880824618, guid: 3d11f66a69f8438479d4c53596024fb0, type: 3}
       propertyPath: m_RootOrder
       value: 3

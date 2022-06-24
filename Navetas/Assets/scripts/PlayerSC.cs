@@ -111,7 +111,7 @@ public class PlayerSC : MonoBehaviour
         jumpingPower *= -1;
         Flip(FlipDirection.Y);
         isInverting = true;
-        StartCoroutine(StopInvertingGravity(1000));
+        StartCoroutine(StopInvertingGravity(500));
     }
     private IEnumerator StopInvertingGravity(int ms)
     {

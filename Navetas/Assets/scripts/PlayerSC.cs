@@ -26,7 +26,6 @@ public class PlayerSC : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(rb.gravityScale);
         animator = GetComponent<Animator>();
 
         //InvertGravity();

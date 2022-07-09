@@ -8,7 +8,6 @@ using TMPro;
 public class TimerSC : MonoBehaviour
 {
     public float timerCount = 0;
-    private int timerCountInteger;
     private TextMeshProUGUI timer;
     private void Start()
     {
@@ -16,9 +15,8 @@ public class TimerSC : MonoBehaviour
     }
     private void Update()
     {
-        timerCountInteger = (int)timerCount;
         timerCount += Time.deltaTime;
-        timer.text = timerCountInteger.ToString();
+        timer.text = (Mathf.Round(timerCount * 100.0f) / 100.0f).ToString();
     }
 
 }

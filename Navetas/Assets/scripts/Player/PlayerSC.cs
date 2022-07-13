@@ -14,7 +14,7 @@ public class PlayerSC : MonoBehaviour
     //r?cuperer l'animator
     Animator animator;
     // d?placements
-    private float horizontal;
+    public float horizontal;
     private float speed = 4f;
     private float jumpingPower = 7f;
     private bool isFacingRight = true;

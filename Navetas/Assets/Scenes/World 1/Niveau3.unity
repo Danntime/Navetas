@@ -1175,6 +1175,18 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 5847213891208720733, guid: 77d1a8ef814821b4e9242ab460028275, type: 3}
+      propertyPath: m_Color.b
+      value: 0.83921576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847213891208720733, guid: 77d1a8ef814821b4e9242ab460028275, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847213891208720733, guid: 77d1a8ef814821b4e9242ab460028275, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5847213891225151910, guid: 77d1a8ef814821b4e9242ab460028275, type: 3}
       propertyPath: cam
       value: 

@@ -64,6 +64,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "f89699c9-2893-450c-873e-daf27700947e",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "78096650-81cc-467b-8e0b-176499f8e872",
                     "path": "1DAxis",
@@ -97,6 +108,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis (manette",
+                    "id": "24b98cb8-24d8-484c-a88f-a5ea1b3241fc",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f8c79117-ae80-4d75-b0bb-95d4b6e706cc",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c5defb82-4a69-46fb-b71c-c76b0b1ef112",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "5c01c250-9a20-44c6-816d-3e3475df97de",
                     "path": "<Keyboard>/f",
@@ -120,6 +164,17 @@
                 },
                 {
                     "name": "",
+                    "id": "863c672e-8af3-4265-bf2e-e039344196ca",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9bab2e35-80a4-44e7-8d03-b0a83b27b9cf",
                     "path": "<Keyboard>/t",
                     "interactions": "",
@@ -131,8 +186,30 @@
                 },
                 {
                     "name": "",
+                    "id": "63eca1b8-c547-4fd4-8384-196b7db59352",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleTimer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "aca6c3b9-49f4-4248-b8bf-e07515fa69aa",
                     "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RestartGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c08691ec-17c5-4aae-a1c7-d76dbbfc4e4c",
+                    "path": "<Gamepad>/rightStickPress",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

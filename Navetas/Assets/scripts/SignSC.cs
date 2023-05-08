@@ -13,7 +13,6 @@ public class SignSC : MonoBehaviour
     private void Awake()
     {
         test = GameObject.Find("TextBoxSprite");
-        Debug.Log(test);
         test.GetComponentInChildren<TextMeshProUGUI>().enabled = false;
         test.GetComponent<Image>().enabled = false;
     }

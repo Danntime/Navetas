@@ -141,6 +141,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D AxisArrow",
+                    "id": "bf4296e5-9fab-4c21-85f8-6840d18e344b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "142e68da-3b6f-4000-8a36-fba1978d5c76",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ccef646b-4915-4f63-a97a-f01ff1d700a6",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "5c01c250-9a20-44c6-816d-3e3475df97de",
                     "path": "<Keyboard>/f",
@@ -209,7 +242,7 @@
                 {
                     "name": "",
                     "id": "c08691ec-17c5-4aae-a1c7-d76dbbfc4e4c",
-                    "path": "<Gamepad>/rightStickPress",
+                    "path": "<Gamepad>/select",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

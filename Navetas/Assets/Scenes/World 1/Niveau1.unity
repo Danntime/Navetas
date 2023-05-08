@@ -819,7 +819,7 @@ PrefabInstance:
       propertyPath: textToDisplay
       value: "Salle secr\xE8te du patch note ! Patch actuel : Quality of Life Update
         ! ajouts : - Panneaux de tutoriel -Support manette - optimisation en tout
-        genre"
+        genre, Deuxi\xE8me monde (niveaux 1-5)"
       objectReference: {fileID: 0}
     - target: {fileID: 410765900992648360, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_Color.b
@@ -1126,11 +1126,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6224178669660710732, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.715616
+      value: 4.68
       objectReference: {fileID: 0}
     - target: {fileID: 6224178669660710732, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6696497
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 6224178669660710732, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2469,6 +2469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 28976677, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
+      propertyPath: textToDisplay
+      value: Utilisez La Barre espace ou le bouton A pour sauter.
+      objectReference: {fileID: 0}
     - target: {fileID: 1088367403310652172, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_Name
       value: Sign

@@ -13,6 +13,8 @@ public class PlayerSC : MonoBehaviour
 {
     //r?cuperer l'animator
     Animator animator;
+    GameObject InverterScript;
+
     // d?placements
     public float horizontal;
     private float speed = 4f;
@@ -97,8 +99,15 @@ public class PlayerSC : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
 
-            case "Inverter":
-                InvertGravity();
+            case "Inverter": 
+                if (collision.gameObject.GetComponent<InverterCDSC>().isOnCooldown == true)
+                {
+                    //ne rien faire
+                }
+                else
+                {
+                    InvertGravity();
+                }
                 break;
         }
     }

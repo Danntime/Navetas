@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346568331}
   - component: {fileID: 346568332}
+  - component: {fileID: 1663197122}
   m_Layer: 0
   m_Name: MagnetArea
   m_TagString: Untagged
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1663197122
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346568330}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa3a9059d272b0b4da010fd6ff4a377a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2517290722966223826
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +183,7 @@ SpriteRenderer:
   m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c931e0564685baf44bb8ea39e2acb45b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -213,3 +234,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3bf1b129eb3d6c47bafea03bfbd9de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1663197122}

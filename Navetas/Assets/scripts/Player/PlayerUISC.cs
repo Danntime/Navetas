@@ -10,8 +10,11 @@ public class PlayerUISC : MonoBehaviour
 
 
     void Start()
-    {
-        timer = GameObject.Find("Chrono").GetComponent<TextMeshProUGUI>();
+    {   
+        if (GameObject.Find("Chrono") != null)
+        {
+            timer = GameObject.Find("Chrono").GetComponent<TextMeshProUGUI>();
+        }
     }
 
     void Update()

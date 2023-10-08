@@ -21,7 +21,6 @@ public class PlayerSC : MonoBehaviour
     private float jumpingPower = 7f;
     private bool isFacingRight = true;
 
-    private bool isInverting = false;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -30,7 +29,6 @@ public class PlayerSC : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        //InvertGravity();
     }
 
     void Update()
@@ -93,39 +91,41 @@ public class PlayerSC : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        switch(collision.gameObject.tag)
+        switch (collision.gameObject.tag)
         {
+            // Restart le niveau
             case "Death":
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
-
-            case "Inverter": 
-                if (collision.gameObject.GetComponent<InverterCDSC>().isOnCooldown == true)
-                {
-                    //ne rien faire
-                }
-                else
+            // Inverse la gravité
+            case "Inverter":
+                if (collision.gameObject.GetComponent<InverterCDSC>().isOnCooldown == false)
                 {
                     InvertGravity();
+                    StartCoroutine(collision.gameObject.GetComponent<InverterCDSC>().CoolDownInverter());
+                    collision.gameObject.GetComponent<InverterCDSC>().isOnCooldown = true;
                 }
                 break;
+            case "Gravity button":
+                {
+                    LessenGravity(0.5f);
+                }
+                break;
+
         }
     }
-
+    // Inverse le sprite, la gravité et le saut
     public void InvertGravity()
     {
-        if (isInverting) return;
         rb.gravityScale *= -1;
         jumpingPower *= -1;
         Flip(FlipDirection.Y);
-        isInverting = true;
-        StartCoroutine(StopInvertingGravity(500));
     }
-    private IEnumerator StopInvertingGravity(int ms)
+    public void LessenGravity( float multiplier)
     {
-        yield return new WaitForSeconds(ms / 1000);
-        isInverting = false;
+        rb.gravityScale *= multiplier;
     }
+
 
     public void OnRestartGame(InputAction.CallbackContext context)
     {

@@ -8,6 +8,7 @@ TagManager:
   - Death
   - Inverter
   - TextBox
+  - Gravity button
   layers:
   - Default
   - TransparentFX

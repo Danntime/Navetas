@@ -16,7 +16,7 @@ public class TimerSC : MonoBehaviour
     private void Update()
     {
         timerCount += Time.deltaTime;
-        timer.text = (Mathf.Round(timerCount * 100.0f) / 100.0f).ToString();
+        timer.text = (Mathf.Round(timerCount * 100.0f) / 100.0f, 2).ToString();
     }
 
 }

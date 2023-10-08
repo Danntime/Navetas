@@ -138,7 +138,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: InvertCooldown
-  m_Speed: 0.12
+  m_Speed: 0.13333334
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1818710607144699361}

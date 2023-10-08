@@ -10,28 +10,21 @@ public class InverterCDSC : MonoBehaviour
     void Start()
     {
     }
-
-    // Crée un cooldown
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.CompareTag("Player") && (isOnCooldown == false))
-        {
-            StartCoroutine(CoolDownInverter());
-        }
+        Debug.Log(isOnCooldown);
     }
-    IEnumerator CoolDownInverter()
+  
+    // Coroutine de Cooldown (2s)
+     public IEnumerator CoolDownInverter()
     {
         //Change l'animation de cooldown
         animator.SetBool("IsOnCooldownAnim", true);
-        isOnCooldown = true;
 
         // On attends le cd
         yield return new WaitForSeconds(2);
-
         // Puis on remet l'ancien sprite
         animator.SetBool("IsOnCooldownAnim", false);
         isOnCooldown = false;
-        Debug.Log("caca");
-
     }
 }

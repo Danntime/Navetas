@@ -1,23 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class MovingFlag : MonoBehaviour
 {
-    Vector3 initPos;
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D collision) // Dï¿½place le flag si le joueur entre dans la zone de collision
     {
-        initPos = transform.parent.position;
-    }
-    private void OnTriggerEnter2D(Collider2D collision) // Déplace le flag si le joueur entre dans la zone de collision
-    {
-        Debug.Log("Est entré");
+        Debug.Log("Est entrï¿½");
         if (collision.gameObject.CompareTag("Player"))
         {
-            while (transform.parent.position.x <= 31)
-            {
-                transform.parent.position += new Vector3(0.000001f, 0, 0);
-            }
+                GetComponentInParent<Rigidbody2D>().velocity = new Vector2(4, 0);
+        }
+    }
+    private void FixedUpdate()
+    {
+        if (transform.parent.position.x <= 31)
+        {
+            GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
     }
 }

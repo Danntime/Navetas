@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-public class MovingFlagx3 : MonoBehaviour
+public class MovingFlag : MonoBehaviour
 {
     [SerializeField] private Vector2 targetVelocity;
     [SerializeField] private Vector2 targetPosition1;

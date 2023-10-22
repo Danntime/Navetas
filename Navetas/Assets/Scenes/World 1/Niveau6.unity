@@ -1531,7 +1531,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 28976677, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: textToDisplay
-      value: Les Orbes Violets vous font aller vers le haut.
+      value: Les Orbes Violets vous font aller vers le haut. Les Orbes Violets opaques
+        sont plus puissants.
       objectReference: {fileID: 0}
     - target: {fileID: 1088367403310652172, guid: b6214902ca6d53b47a6887d811e57014, type: 3}
       propertyPath: m_Name

@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1263734532950377202, guid: f848ad49b67c65c46a286da17337f654, type: 3}
       propertyPath: m_Name
-      value: MagnetRevampedType2
+      value: MagnetType2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1263734532950377214, guid: f848ad49b67c65c46a286da17337f654, type: 3}
       propertyPath: m_RootOrder

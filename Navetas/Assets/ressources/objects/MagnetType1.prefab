@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1263734532950377200}
   - component: {fileID: 1263734532950377201}
   m_Layer: 0
-  m_Name: MagnetRevampedType1
+  m_Name: MagnetType1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

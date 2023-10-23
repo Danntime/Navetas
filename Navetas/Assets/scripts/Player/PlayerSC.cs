@@ -97,7 +97,7 @@ public class PlayerSC : MonoBehaviour
             case "Death":
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
-            // Inverse la gravité
+            // Inverse la gravitï¿½
             case "Inverter":
                 if (collision.gameObject.GetComponent<InverterCDSC>().isOnCooldown == false)
                 {
@@ -114,7 +114,7 @@ public class PlayerSC : MonoBehaviour
 
         }
     }
-    // Inverse le sprite, la gravité et le saut
+    // Inverse le sprite, la gravitï¿½ et le saut
     public void InvertGravity()
     {
         rb.gravityScale *= -1;

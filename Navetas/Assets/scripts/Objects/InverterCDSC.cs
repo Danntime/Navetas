@@ -7,13 +7,6 @@ public class InverterCDSC : MonoBehaviour
     public Animator animator;
     [HideInInspector]
     public bool isOnCooldown = false;
-    void Start()
-    {
-    }
-    private void Update()
-    {
-        Debug.Log(isOnCooldown);
-    }
   
     // Coroutine de Cooldown (2s)
      public IEnumerator CoolDownInverter()

@@ -108,7 +108,7 @@ public class PlayerSC : MonoBehaviour
                 break;
             case "Gravity button":
                 {
-                    LessenGravity(0.5f);
+                    LessenGravity(0.1f);
                 }
                 break;
 

@@ -8,6 +8,7 @@ using UnityEngine;
 public class MovingFlag : MonoBehaviour
 {
     [SerializeField] private Vector2 targetVelocity;
+    [SerializeField] private Vector2 targetVelocity2;
     [SerializeField] private Vector2 targetPosition1;
     [SerializeField] private Vector2 targetPosition2;
     [SerializeField] private Vector2 targetPosition3;
@@ -21,8 +22,17 @@ public class MovingFlag : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (compteur == 2)
+            {
+                GetComponentInParent<Rigidbody2D>().velocity = new Vector2(targetVelocity2.x, targetVelocity2.y);
+                compteur++;
+            }
+            else if (compteur <= 1)
+            {
                 GetComponentInParent<Rigidbody2D>().velocity = new Vector2(targetVelocity.x, targetVelocity.y);
-                             compteur++;
+                compteur++;
+            }
+
         }
     }
     private void Update()
@@ -44,7 +54,7 @@ public class MovingFlag : MonoBehaviour
                 }
                 break;
                 case 3:
-                if (Vector3.Distance(transform.parent.position, new Vector3(targetPosition3.x,targetPosition3.y)) <= approximation)
+                if (Vector3.Distance(transform.parent.position, new Vector3(targetPosition3.x,targetPosition3.y)) <= 0.5)
                 {
                     GetComponentInParent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 }

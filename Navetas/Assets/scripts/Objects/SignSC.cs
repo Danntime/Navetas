@@ -8,7 +8,7 @@ using TMPro;
 public class SignSC : MonoBehaviour
 {
     public string textToDisplay;
-    public GameObject test;
+    private GameObject test;
        
     private void Awake()
     {

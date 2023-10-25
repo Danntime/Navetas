@@ -6,14 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerTPSC : MonoBehaviour
 {
     private GameObject currentTeleporter;
-    void Start()
-    {
 
-    }
-
-    void Update()
-    {
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Teleporter"))

@@ -33,7 +33,6 @@ public class PlayerSC : MonoBehaviour
 
     void Update()
     {
-
         animator.SetBool("isWalking", horizontal != 0);
         animator.SetBool("animIsGrounded", IsGrounded());
 
@@ -111,7 +110,6 @@ public class PlayerSC : MonoBehaviour
                     LessenGravity(0.1f);
                 }
                 break;
-
         }
     }
     // Inverse le sprite, la gravit� et le saut

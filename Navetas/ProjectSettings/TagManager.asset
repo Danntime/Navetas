@@ -9,6 +9,7 @@ TagManager:
   - Inverter
   - TextBox
   - Gravity button
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
